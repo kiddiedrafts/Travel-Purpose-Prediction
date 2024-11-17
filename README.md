@@ -1,5 +1,7 @@
 # Travel Purpose Prediction with Machine Learning
 This project aims to predict the purpose of a user's travel booking—whether it's for work or leisure—using data from travel bookings on the Mr. Bilit website. The model leverages XGBoost, a highly efficient gradient boosting algorithm, to classify travel bookings based on various features, ensuring accurate predictions for both work-related and leisure trips.
+
+
 ## Dataset
 
 The dataset used in this project is sourced from travel booking data provided by Mr. Bilit website. The dataset includes information from various users and their travel bookings, including trip details, personal information, and ticket attributes.
@@ -10,28 +12,31 @@ The dataset used in this project is sourced from travel booking data provided by
 
 The dataset consists of travel booking records and includes the following columns:
 
-- **Created**: The time when the ticket was created
-- **CancelTime**: The time when the traveler canceled the ticket
-- **DepartureTime**: The time of travel departure
-- **BillID**: The purchase ID
-- **TicketID**: The ticket ID
-- **ReserveStatus**: The payment status of the customer
-- **UserID**: The user's unique ID
-- **Male**: Indicates whether the ticket is for a male or female passenger
-- **Price**: The price of the ticket before any discount
-- **CouponDiscount**: The discount applied to the ticket by the passenger
-- **From**: The departure location
-- **To**: The destination
-- **Domestic**: Indicates whether the trip is domestic or international
-- **VehicleType**: Specifies the details of the vehicle
-- **VehicleClass**: Indicates whether the vehicle is first class
-- **Vehicle**: The type of vehicle
-- **Cancel**: Indicates whether the ticket was canceled
-- **HashPassportNumber_p**: Hashed passport number
-- **HashEmail**: Hashed email address
-- **BuyerMobile**: Hashed mobile number
-- **NationalCode**: Hashed national ID number
-- **TripReason**: The purpose of the trip (target variable)
+| Column                  | Description                                        |
+|-------------------------|----------------------------------------------------|
+| `Created`               | Timestamp when the booking was made               |
+| `CancelTime`            | Timestamp when the ticket was canceled            |
+| `DepartureTime`         | Scheduled departure time of the trip              |
+| `BillID`                | Purchase ID                                       |
+| `TicketID`              | Ticket ID                                         |
+| `ReserveStatus`         | Customer payment status                           |
+| `UserID`                | Unique user ID                                    |
+| `Male`                  | Gender of the passenger                           |
+| `Price`                 | Price of the ticket without discounts             |
+| `CouponDiscount`        | Discount applied to the ticket                    |
+| `From`                  | Departure location                                |
+| `To`                    | Destination location                              |
+| `Domestic`              | Whether the trip is domestic or international     |
+| `VehicleType`           | Type of vehicle used for the trip                 |
+| `VehicleClass`          | Whether the vehicle is first-class or not         |
+| `Vehicle`               | Specific vehicle used                             |
+| `HashPassportNumber_p`  | Hashed passport number                            |
+| `HashEmail`             | Hashed email address                              |
+| `BuyerMobile`           | Hashed mobile number                              |
+| `NationalCode`          | Hashed national ID                                |
+| `Cancel`                | Whether the ticket was canceled                   |
+| `TripReason`            | Reason for the trip (target variable)             |
+
 
 ### Dataset Location
 
